@@ -70,7 +70,7 @@ public String VisitFirstSearchResult(String Firstlink_css ) {
 public String VerifySearchResults() {
 	String SearchresultTimeline1 = "SearchresultTimeline1";
 	String SearchresultTimeline2 = "SearchresultTimeline2";
-		for(int i=1;i<=10;i++) {
+		for(int i=1;i<9;i++) {
 			System.out.println("Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1)+i+prop.getProperty(SearchresultTimeline2)))).getText()+"'"+"result");
 			test.log(LogStatus.INFO,"Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1)+i+prop.getProperty(SearchresultTimeline2)))).getText()+"'"+"result");
 			
