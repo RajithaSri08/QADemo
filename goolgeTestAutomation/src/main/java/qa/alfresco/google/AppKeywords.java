@@ -113,6 +113,7 @@ public String VerifyGoogleHomepage() {
 		e.sendKeys("");
 		e.submit();
 		
+		
 		// Verifying the Google uk Home page 
 		Boolean check1=driver.findElement(By.xpath(prop.getProperty(searchBar))).isDisplayed();
 		Boolean check2=driver.findElement(By.xpath(prop.getProperty(googleUKLogo))).isDisplayed();
