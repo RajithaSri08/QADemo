@@ -65,8 +65,6 @@ public String VisitFirstSearchResult(String Firstlink_css ) {
 	}
 
 
-
-
 public String VerifySearchResults() {
 	String SearchresultTimeline1 = "SearchresultTimeline1";
 	String SearchresultTimeline2 = "SearchresultTimeline2";
