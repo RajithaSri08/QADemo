@@ -180,6 +180,7 @@ public class GenericKeywords  {
 					e = driver.findElement(By.name(prop.getProperty(locator)));
 				else if (locator.endsWith("_css"))
 					e = driver.findElement(By.cssSelector(prop.getProperty(locator)));
+				
 			}
 			// Then - declare the webElement and use a function to find it
                catch (Exception ex) {
@@ -201,6 +202,9 @@ public class GenericKeywords  {
 			e = driver.findElements(By.name(prop.getProperty(locatorKey)));
 		else if (locatorKey.endsWith("_css"))
 			e = driver.findElements(By.cssSelector(prop.getProperty(locatorKey)));
+		else 
+			
+			e = driver.findElements(By.cssSelector(locatorKey));
 		if (e.size() == 0)
 			return false;
 		else

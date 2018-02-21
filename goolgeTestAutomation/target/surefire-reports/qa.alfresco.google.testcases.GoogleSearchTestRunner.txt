@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: qa.alfresco.google.testcases.GoogleSearchTestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.091 s - in qa.alfresco.google.testcases.GoogleSearchTestRunner
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.424 s - in qa.alfresco.google.testcases.GoogleSearchTestRunner

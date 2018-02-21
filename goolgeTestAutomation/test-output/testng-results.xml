@@ -2,16 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="suite1" duration-ms="0" started-at="2018-02-20T13:19:32Z" finished-at="2018-02-20T13:19:32Z">
+  <suite name="Default suite" duration-ms="61950" started-at="2018-02-21T01:35:58Z" finished-at="2018-02-21T01:37:00Z">
     <groups>
     </groups>
-  </suite> <!-- suite1 -->
-  <suite name="testcases" duration-ms="44955" started-at="2018-02-20T13:18:47Z" finished-at="2018-02-20T13:19:32Z">
-    <groups>
-    </groups>
-    <test name="GoogleTest" duration-ms="44955" started-at="2018-02-20T13:18:47Z" finished-at="2018-02-20T13:19:32Z">
+    <test name="Default test" duration-ms="61950" started-at="2018-02-21T01:35:58Z" finished-at="2018-02-21T01:37:00Z">
       <class name="qa.alfresco.google.testcases.GoogleSearchTestRunner">
-        <test-method status="PASS" signature="GoogleTest(java.util.Hashtable)[pri:0, instance:qa.alfresco.google.testcases.GoogleSearchTestRunner@394df057]" name="GoogleTest" duration-ms="43833" started-at="2018-02-20T13:18:47Z" data-provider="getData" finished-at="2018-02-20T13:19:30Z">
+        <test-method status="PASS" signature="GoogleTest(java.util.Hashtable)[pri:0, instance:qa.alfresco.google.testcases.GoogleSearchTestRunner@58a9760d]" name="GoogleTest" duration-ms="61716" started-at="2018-02-21T01:35:58Z" data-provider="getData" finished-at="2018-02-21T01:37:00Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoogleTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:qa.alfresco.google.testcases.GoogleSearchTestRunner@394df057]" name="quit" is-config="true" duration-ms="1027" started-at="2018-02-20T13:19:30Z" finished-at="2018-02-20T13:19:31Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:qa.alfresco.google.testcases.GoogleSearchTestRunner@58a9760d]" name="quit" is-config="true" duration-ms="210" started-at="2018-02-21T01:37:00Z" finished-at="2018-02-21T01:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- qa.alfresco.google.testcases.GoogleSearchTestRunner -->
-    </test> <!-- GoogleTest -->
-  </suite> <!-- testcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

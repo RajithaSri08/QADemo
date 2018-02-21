@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="qa.alfresco.google.testcases.GoogleSearchResults">
+      <class name="qa.alfresco.google.testcases.GoogleSearchTestRunner">
         <methods>
+          <include name="GoogleTest" invocation-numbers="0"/>
           <include name="quit"/>
-          <include name="doLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- qa.alfresco.google.testcases.GoogleSearchResults -->
+      </class> <!-- qa.alfresco.google.testcases.GoogleSearchTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

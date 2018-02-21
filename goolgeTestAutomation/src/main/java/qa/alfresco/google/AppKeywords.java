@@ -66,13 +66,18 @@ public String VisitFirstSearchResult(String Firstlink_css ) {
 
 
 public String VerifySearchResults() {
-	String SearchresultTimeline1 = "SearchresultTimeline1";
-	String SearchresultTimeline2 = "SearchresultTimeline2";
-		for(int i=1;i<9;i++) {
-			System.out.println("Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1)+i+prop.getProperty(SearchresultTimeline2)))).getText()+"'"+"result");
-			test.log(LogStatus.INFO,"Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1)+i+prop.getProperty(SearchresultTimeline2)))).getText()+"'"+"result");
-			
-		}
+	
+	//Dynamically finds how many results are shown and prints out the time line
+	String SearchresultTimeline1_css = "SearchresultTimeline1_css";
+	String SearchresultTimeline2_css = "SearchresultTimeline2_css";
+	int i = 1;
+
+	while (isElementPresent(prop.getProperty(SearchresultTimeline1_css)+i+prop.getProperty(SearchresultTimeline2_css))) {
+		System.out.println("Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1_css)+i+prop.getProperty(SearchresultTimeline2_css)))).getText()+"'"+"result");
+		test.log(LogStatus.INFO,"Time line of Search Result - "+i+" is "+" '"+driver.findElement(By.cssSelector((prop.getProperty(SearchresultTimeline1_css)+i+prop.getProperty(SearchresultTimeline2_css)))).getText()+"'"+"result");
+		i++;
+	}
+		
 		System.out.println("Results are shown within past 7 days");
 		test.log(LogStatus.INFO,"Results are shown within past 7 days");
 		test.log(LogStatus.PASS, "VerifySearchResults");
