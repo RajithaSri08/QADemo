@@ -14,12 +14,8 @@ import qa.alfresco.google.util.Constants;
 
 public class AppKeywords extends GenericKeywords {
 	
-
-	
 	public AppKeywords(ExtentTest test)   {
 		super(test);
-		
-		
 	}
 
 	public String GoogleHomePage(String GoogleUkHomePage) {
